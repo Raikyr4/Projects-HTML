@@ -9,47 +9,92 @@
     <link rel="shortcut icon" href="1500.jpg" type="image/x-icon">
     <style>
         body {
-            background-color: darkkhaki;
+            background-color: rgb(252, 185, 0);
         }
     </style>
 </head>
 
 <body>
-    <h1>Hello World !</h1> <!--tag de títulos o tamanho da fonte esta identificado no numero presente na tag -->
-    <h2>This is heading 2</h2>
-    <h3>This is heading 3</h3>
-    <hr> <!-- tag que cria uma linha cortando a pagina de ponta ponta na vertical-->
-    <p>First document html</p> <!-- tag de parágrafos-->
+    <h1  style="text-align:center;">Hello World !</h1> <!--tag de títulos o tamanho da fonte esta identificado no numero presente na tag -->
+        <h2>This is heading 2</h2>
+         <h3>This is heading 3</h3>
+          <hr> <!-- tag que cria uma linha cortando a pagina de ponta ponta na vertical-->
+              <p>First document html</p> <!-- tag de parágrafos-->
 
-    <p>todo tipo de texto pode ser escrito entre as tags de paragrafo e essas sao alguns simbolos especiais &reg; &copy;
-        &trade; &euro; &delta; </p>
-    <p>Usando a tag br podemos quebrar a linha do texto , semelhante com : <br>cout &lt; &lt; endl; em C++ </p>
+                  <p>todo tipo de texto pode ser escrito entre as tags de paragrafo e essas sao alguns simbolos especiais &reg; &copy;
+            &trade; &euro; &delta; </p>
+                 <p>Usando a tag br podemos quebrar a linha do texto , semelhante com : <br>cout &lt; &lt; endl; em C++ </p>
 
-    <h2>Colocando link</h2>
-    <p>podemos expor links através de tag como &lt;a &gt; <a href="https://www.w3schools.com">Clica aqui</a></p>
+          <h2>Colocando link</h2>
+            <p>podemos expor links através de tag como &lt;a &gt; <a href="https://www.w3schools.com "target="_blank" rel="external">Clica aqui</a></p>
+            <!--Target faz com que vc seja redirecionado para outra aba sem sobrepor a aba atual-->
+            <p>acessando o nome da minha outra pagina <a href="ola.html" rel = "prev">CLICA AKI</a></p>
+                
+        <h2>Colocando Imagens</h2>
+             <p>podemos colocar imagens através da tag &lt;img&gt;</p>
+              <img src="https://www.alura.com.br/artigos/assets/formacao-linguagem-c-plus-plus/img-01.png" alt="oi">
+              <!-- <img src="1500.jpg" alt="ola"><--><br>
 
-    <h2>Colocando Imagens</h2>
-    <p>podemos colocar imagens através da tag &lt;img&gt;</p>
-    <img src="https://www.alura.com.br/artigos/assets/formacao-linguagem-c-plus-plus/img-01.png" alt="oi">
-    <!-- <img src="1500.jpg" alt="ola"><--><br>
+        <h2>Podemos mudar o favicon do site </h2>
 
-    <h2>Podemos mudar o favicon do site </h2>
+        <h2>Colocando cor em um texto</h2>
+             <p style="color:rgb(212, 117, 117);">This is a red paragraph.</p>
+             <p> <mark style="background-color:rgb(2, 65, 28);"> marcando um texto</mark></p>
 
-    <h2>Colocando cor em um texto</h2>
-    <p style="color:rgb(212, 117, 117);">This is a red paragraph.</p>
-    <p> <mark style="background-color:rgb(2, 65, 28);"> marcando um texto</mark></p>
+        <h2>Dica de Ferramenta, quando passamos o mouse no texto</h2>
+           <p title="I'm a tooltip">Mouse over this paragraph, to display the title attribute as a tooltip.</p>
+        <h2>Colocando Italico e Letra forte</h2>
+           <p>Colocando um texto em <i>ola</i> e <strong>letra forte</strong></p>
+        <h2>Usando preformatação e tipo fonte code</h2>
+           <p> <code><pre>
+            if(true)
+            {
+                printf("oi")
+            }
+        </pre></code></p>
 
-    <h2>Dica de Ferramenta, quando passamos o mouse no texto</h2>
-    <p title="I'm a tooltip">Mouse over this paragraph, to display the title attribute as a tooltip.</p>
-    <h2>Colocando Italico e Letra forte</h2>
-    <p>Colocando um texto em <i>ola</i> e <strong>letra forte</strong></p>
-    <h2>Usando preformatação e tipo fonte code</h2>
-    <p> <code><pre>
-        if(true)
-        {
-            printf("oi")
-        }
-    </pre></code></p>
+        <h1>Trabalho com Listas</h1>
+        <h2>LISTA ORDENADA</h2>
+            <ol type="1"> <!--1 ,A,a,i and I-->
+                <li>Acordar</li>
+                <li>Estudar
+                <li>Trabalhar
+            </ol>
+        <h2>LISTA NAO ORDENADA</h2>
+            <ul type="square"> <!--disc, circle e and square-->
+                <li>pao</li>
+                <li>batata</li>
+                <li>arroz</li>
+            </ul>
+            <h2>A basic HTML table</h2>
+
+            <table style="width:100%">
+            <tr>
+                <th>Company</th> <!-- a tag th determina o Titilo da coluna-->
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>Alfreds Futterkiste</td> <!-- a tag td determina o conteúdo da coluna na respectiva ordem criada a cima-->
+                <td>Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+            </table>
+            <!--É possível juntar as estruturas de listas-->
+
+            <!--a tag picture eh para as mídias se adaptarem a diversos tamanhos de site, ou seja, a midia do site se adapta a ao tamanho do celular ou desktop-->
+            
+        <!--<picture>
+                <source media="(max-width: 750px )" srcset="foto-p.jpg">
+                <source media="(max-width: )" srcset="">
+                <source media="(max-width: 1000px )" srcset="foto-g.jpg">
+                <img src="1500.jpg" alt="">
+            </picture>--> 
 
 </body>
 
